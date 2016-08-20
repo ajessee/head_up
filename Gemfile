@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'rails',                   
-gem 'bcrypt',                 
-gem 'faker',                 
-gem 'carrierwave',            
-gem 'mini_magick',           
-gem 'fog',                    
-gem 'will_paginate',         
-gem 'bootstrap-will_paginate',
-gem 'bootstrap-sass',        
-gem 'puma',                  
-gem 'sass-rails',            
-gem 'uglifier',              
-gem 'coffee-rails',          
-gem 'jquery-rails',          
-gem 'turbolinks',            
-gem 'jbuilder',              
-gem 'pg',                     
+gem 'rails'                  
+gem 'bcrypt'                
+gem 'faker'                
+gem 'carrierwave'           
+gem 'mini_magick'          
+gem 'fog'                   
+gem 'will_paginate'        
+gem 'bootstrap-will_paginate'
+gem 'bootstrap-sass'        
+gem 'puma'                 
+gem 'sass-rails'            
+gem 'uglifier'                   
+gem 'jquery-rails'          
+gem 'jbuilder'             
+gem 'pg'    
+# gem 'coffee-rails'                  
+# gem 'turbolinks'           
 
 group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri

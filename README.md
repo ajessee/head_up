@@ -2,4 +2,4 @@
 
 This is the website for Head Up, Inc.
 
-Written in Rails
+Written in Rails 
