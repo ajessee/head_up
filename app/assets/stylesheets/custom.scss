@@ -91,15 +91,16 @@ footer a:hover {
 }
 
 footer small {
-  float: left;
+  /*float: left;*/
 }
 
 footer ul {
-  float: right;
+  /*float: right;*/
   list-style: none;
 }
 
 footer ul li {
-  float: left;
+  /*float: left;*/
+  display: inline;
   margin-left: 15px;
 }
