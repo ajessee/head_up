@@ -1,2 +1,51 @@
-<h1>Head Up Consulting</h1>
-<p>Where is your head at?</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+     <%= image_tag("mountain.jpg", alt: "Mountain", class: "img-responsive center-div") %>
+    </div>
+
+    <div class="item">
+     <%= image_tag("power.jpg", alt: "Power", class: "img-responsive center-div") %>
+    </div>
+
+    <div class="item">
+     <%= image_tag("meeting.jpg", alt: "Meeting", class: "img-responsive center-div") %>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">My Mission: I believe that no matter who you are, or what you want to do in this world, you can do it bigger, better, and faster if you know how to bring out the best in yourself and others.  I've dedicated my life to helping business owners and entrepreneurs know their power to bring out the best in themselves and others.  I do that through a random hodge-podge of coaching, consulting, speaking, writing, workshop design, facilitation, and online courses.</div>
+</div>
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+  </div>
+  <button type="submit" class="btn btn-default">Join Me!</button>
+</form>
+<div class="panel panel-default">
+  <div class="panel-body">Stephanie Who?:
+  I'm an entrepreneur, speaker, and all-round adventurer dedicated to helping you know your power to bring out the best in yourself and others to grow your business.  If you're curious about my story, click to get the full low-down.</div>
+</div>
