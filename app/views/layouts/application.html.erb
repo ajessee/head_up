@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    
     <title> <%= full_title(yield(:title)) %> </title>
-    <%= render 'layouts/rails_default' %>
+    <%= render 'layouts/fonts' %>
     <%= render 'layouts/shim' %>
   </head>
-  <body>
+  <body id="page-top">
     <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-      <%= render 'layouts/footer' %>  
-    </div>
+    <!-- <div class="container">
+ -->      <%= yield %>
+      <!-- <%= render 'layouts/footer' %>   -->
+    <!-- </div> -->
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>

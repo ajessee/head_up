@@ -1,12 +1,52 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "Head Up", '#', id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Stephanie Who?",   '#' %></li>
-        <li><%= link_to "Know Your Power", '#' %></li>
-        <li><%= link_to "Services",   '#' %></li>
-      </ul>
-    </nav>
-  </div>
+<!-- Navigation -->
+<!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i> Menu
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <%= image_tag("logo.svg", alt: "Logo", class: "img-responsive") %>
+                <!-- <img src="img/agency/logo.svg" class="img-responsive" alt="">
+            </a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#process">Process</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#work">Work</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#pricing">Pricing</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header style="background-image: url(<%= asset_path 'bg-header.jpg' %>);">
+    <div class="intro-content">
+        <%= image_tag("profile.svg", alt: "Profile", class: "img-responsive img-centered") %>
+        <!-- <img src="profile.svg" class="img-responsive img-centered" alt=""> -->
+        <div class="brand-name">Vitality</div>
+        <hr class="colored">
+        <div class="brand-name-subtext">by Start Bootstrap</div>
+    </div>
+    <div class="scroll-down">
+        <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+    </div>
 </header>

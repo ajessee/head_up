@@ -1,8 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 /* universal */
-
+/*
 body {
   padding-top: 60px;
 }
@@ -26,10 +28,10 @@ textarea {
 .center-div {
   width: 50%;
   margin: 0 auto; 
-}
+}*/
 
 /* typography */
-
+/*
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -53,10 +55,10 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-}
+}*/
 
 /* header */
-
+/*
 #logo {
   float: left;
   margin-right: 10px;
@@ -71,11 +73,11 @@ p {
 #logo:hover {
   color: #fff;
   text-decoration: none;
-}
+}*/
 
 /* footer */
 
-footer {
+/*footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
@@ -91,16 +93,16 @@ footer a:hover {
 }
 
 footer small {
-  /*float: left;*/
+  float: left;
 }
 
 footer ul {
-  /*float: right;*/
+  float: right;
   list-style: none;
 }
 
 footer ul li {
-  /*float: left;*/
+  float: left;
   display: inline;
   margin-left: 15px;
-}
+}*/
