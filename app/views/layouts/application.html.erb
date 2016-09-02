@@ -2,6 +2,7 @@
 <html>
   <head>
     <%= csrf_meta_tags %>
+    <%= render 'layouts/meta' %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     
     <title> <%= full_title(yield(:title)) %> </title>
@@ -10,10 +11,7 @@
   </head>
   <body id="page-top">
     <%= render 'layouts/header' %>
-    <!-- <div class="container">
- -->      <%= yield %>
-      <!-- <%= render 'layouts/footer' %>   -->
-    <!-- </div> -->
+      <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
