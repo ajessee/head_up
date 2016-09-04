@@ -1,39 +1,34 @@
-<!-- Newsletter Signup Call to Action -->
-<section class="cta-form bg-dark">
-    <div class="container text-center">
-        <h3>Subscribe to our newsletter!</h3>
-        <hr class="colored">
+<!-- Stephanie Section -->
+<section id="headup" class="bg-gray">
+    <div class="container text-center wow fadeIn">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <!-- MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
-                    <form role="form" action="//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                        <div class="input-group input-group-lg">
-                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
-                            <span class="input-group-btn">
-                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
-                            </span>
-                        </div>
-                        <div id="mce-responses">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                    </form>
-                </div>
-                <!-- End MailChimp Signup Form -->
+            <div class="col-lg-12">
+                <h2>Head Up</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-md-8">
+                <%= image_tag("stephanie1.jpg", alt: "team1.jpg", class: "img-responsive center-block") %>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <p>Hi, I’m Stephanie, the founder of Head Up. Thanks for stopping by to check us out!</p>
+                <br>
+                <p>I started Head Up to help business owners and entrepreneurs understand their mission and give voice to their purpose. Through coaching, facilitation, and storytelling, I can help you and your team know your power and grow your business.</p>
+                <br>    
+                <p>Contact me to setup a time to talk about how we can bring your buisness to the next level.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about">
+<!-- Services Section -->
+<section id="services">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-lg-12 wow fadeIn">
                 <h1>Services</h1>
-                <p>Head Up offers the following services to help business owners and entrepreneurs bring out the best in themselves and others</p>
                 <hr class="colored">
             </div>
         </div>
@@ -87,25 +82,120 @@
     </div>
 </section>
 
+<!-- Process Section -->
+<section id="process" class="services bg-gray">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12 wow fadeIn">
+                <h2>Our Process</h2>
+                <hr class="colored">
+                <p>Here is an overview of how we approach each new project</p>
+            </div>
+        </div>
+        <div class="row content-row">
+            <!-- Service Item 1 -->
+            <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="fa fa-clipboard"></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Plan</h3>
+                        <ul>
+                            <li>Client interview</li>
+                            <li>Gather consumer data</li>
+                            <li>Create strategy</li>
+                            <li>Analyze research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Create</h3>
+                        <ul>
+                            <li>Gather team feedback</li>
+                            <li>Build business plan</li>
+                            <li>Map workflow</li>
+                            <li>Build iterative feedback mechanism</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Execute</h3>
+                        <ul>
+                            <li>Market product launch</li>
+                            <li>Collect UX data</li>
+                            <li>Deploy product</li>
+                            <li>Quarterly review</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Quote Call to Action -->
-<aside class="cta-quote" style="background-image: url(<%= asset_path 'standout.jpg' %>);">
+<aside class="cta-quote" style="background-image: url(<%= asset_path 'dream.jpg' %>);">
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <span class="quote">“Why fit in, when you were born to stand out?”</span>
+                <span class="quote">“Whatever you can do or dream you can, begin it. / Boldness has genius, power, and magic in it.”</span>
                 <hr class=" colored">
-                <span class="quote">    Dr. Seuss</span>
+                <span class="quote">Goethe</span>
             </div>
         </div>
     </div>
 </aside>
 
-<!-- Portfolio Carousel Heading -->
-<section id="work" class="bg-gray">
-    <div class="container text-center wow fadeIn">
-        <h2>Work</h2>
+<!-- Newsletter Signup Call to Action -->
+<section class="cta-form bg-dark">
+    <div class="container text-center">
+        <h3>Subscribe to our newsletter!</h3>
         <hr class="colored">
-        <p>A portfolio of our work</p>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
+                    <form role="form" action="//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                        <div class="input-group input-group-lg">
+                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
+                            </span>
+                        </div>
+                        <div id="mce-responses">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End MailChimp Signup Form -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Carousel Heading -->
+<section id="portfolio" class="bg-gray">
+    <div class="container text-center wow fadeIn">
+        <h2>Portfolio</h2>
+        <hr class="colored">
+        <p>Examples of coaching, workshop design, writing, and online courses</p>
     </div>
 </section>
 
@@ -118,8 +208,8 @@
             <div class="row">
                 <div class="col-md-5 col-md-push-7">
                     <div class="project-details">
-                        <span class="project-name">Belk, Energy Efficiency</span>
-                        <span class="project-description">EDF Fellow</span>
+                        <span class="project-name">Belk</span>
+                        <span class="project-description">Energy efficiency and GHG reductions in retail space</span>
                         <hr class="colored">
                         <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                     </div>
@@ -221,75 +311,8 @@
     </div> -->
 </section>
 
-<!-- Services Section -->
-<section class="services">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-12 wow fadeIn">
-                <h2>Our Process</h2>
-                <hr class="colored">
-                <p>Here is an overview of how we approach each new project</p>
-            </div>
-        </div>
-        <div class="row content-row">
-            <!-- Service Item 1 -->
-            <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-clipboard"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Plan</h3>
-                        <ul>
-                            <li>Client interview</li>
-                            <li>Gather consumer data</li>
-                            <li>Create strategy</li>
-                            <li>Analyze research</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Service Item 2 -->
-            <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-pencil"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Create</h3>
-                        <ul>
-                            <li>Gather team feedback</li>
-                            <li>Build business plan</li>
-                            <li>Map workflow</li>
-                            <li>Build iterative feedback mechanism</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Service Item 3 -->
-            <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-rocket"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Execute</h3>
-                        <ul>
-                            <li>Market product launch</li>
-                            <li>Collect UX data</li>
-                            <li>Deploy product</li>
-                            <li>Quarterly review</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Testomonials Section -->
-<section class="testimonials bg-gray">
+<section class="testimonials bg-gray" id="testimonials">
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
@@ -327,7 +350,7 @@
                             <div class="col-lg-12">
                                 <p class="lead">"Head Up increased our revenues by over 2000%! I can't recommend them enough."</p>
                                 <hr class="colored">
-                                <p class="quote">Seriously, did you see what Alex said? Like that, but just 2000% better. I can't believe that I'm even getting the opportunity to write this, it's such an honor. Wow.</p>
+                                <p class="quote">Seriously, did you see what Alex said? Like that, but just 2000% better. Since I've started working with Head Up, I have experienced a level of personal growth I couldn't have imagined before.</p>
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
                                         <%= image_tag("ursula.jpg", alt: "Testi2", class: "img-circle img-responsive") %>
@@ -352,9 +375,9 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="lead">"I'm never going to work with another consulting company again. These guys are the cats pyjamas"</p>
+                                <p class="lead">"I'm never going to work with another consulting company again. These guys are the cat's pyjamas"</p>
                                 <hr class="colored">
-                                <p class="quote">After suffering through a parade of incompetent assholes, Head Up was like a breath of fresh air!</p>
+                                <p class="quote">After suffering through a parade of incompetent assholes, Head Up was like a breath of fresh air blowing away the stank!</p>
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
                                         <%= image_tag("stephen.jpg", alt: "Testi2", class: "img-circle img-responsive") %>
@@ -381,20 +404,59 @@
     </div>
 </section>
 
-
-<!-- Quote Call to Action -->
-<aside class="cta-quote" style="background-image: url(<%= asset_path 'dream.jpg' %>);">
+<!-- Contact Section -->
+<section id="contact">
     <div class="container wow fadeIn">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <span class="quote">“Whatever you can do or dream you can, begin it. / Boldness has genius, power, and magic in it.”</span>
-                <hr class=" colored">
-                <span class="quote">Goethe</span>
+            <div class="col-lg-12 text-center">
+                <h2>Contact Head Up</h2>
+                <hr class="colored">
+                <p>Please tell us about your next project and we will let you know what we can do to help you.</p>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Message</label>
+                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-outline-dark">Send</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</aside>
-
+</section>
 
 <!-- Portfolio Grid Section -->
 <section id="blog">
@@ -558,83 +620,6 @@
     </div>
 </section>    
 
-
-<!-- Stephanie Section -->
-<section id="stephanie" class="bg-gray">
-    <div class="container text-center wow fadeIn">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Stephanie</h2>
-                <hr class="colored">
-            </div>
-        </div>
-        <div class="row content-row">
-            <div class="col-md-6">
-                <%= image_tag("stephanie.jpg", alt: "team1.jpg", class: "img-responsive center-block") %>
-            </div>
-            <div class="col-md-6">
-                <p>Hi! I’m Stephanie, the CEO of Head Up. I’m an entrepreneur, speaker, and all-round adventurer dedicated to helping you know your power and grow your business. </p>
-                <br>    
-                <p>You want the short version, you say?  I’m a first-generation east coaster turned Colorado mountain dweller after a long and circuitous road across three continents and through several college degrees.  I’m an obsessive learner who spends time reading, writing, speaking, and creating whenever I’m not outside.  My raison d’etre is to be the courage you need to dare greatly.  Say whut? How about this: I help business owners and entrepreneurs know their power and grow their business.  If you want to chat, hit me up.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container wow fadeIn">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Contact Head Up</h2>
-                <hr class="colored">
-                <p>Please tell us about your next project and we will let you know what we can do to help you.</p>
-            </div>
-        </div>
-        <div class="row content-row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-outline-dark">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Footer -->
 <footer class="footer" style="background-image: url(<%= asset_path 'bg-footer2.jpg' %>)">
     <div class="container text-center">
@@ -645,7 +630,7 @@
             </div>
             <div class="col-md-4 contact-details">
                 <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                <p>123 Stephanie Place
+                <p>Head Up, Inc.
                     <br>Ft. Collins, CO</p>
             </div>
             <div class="col-md-4 contact-details">
