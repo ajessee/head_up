@@ -13,7 +13,7 @@ var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector( '.navbar-fixed-top' ),
 		didScroll = false,
-		startFade = 600;
+		startFade = 400;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -27,7 +27,6 @@ var cbpAnimatedHeader = (function() {
 	function scrollPage() {
 		var sy = scrollY();
 		if ( sy >= startFade) {
-			debugger;
 			$(".navbar-expanded").fadeIn( 50, function() {
     	classie.remove( header, 'navbar-expanded' );
   		});
