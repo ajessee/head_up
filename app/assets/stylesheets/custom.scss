@@ -41,10 +41,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #mobile-full {
       height: 100%;
   }
+  #services {
+    padding: 25px 0;
+    }
 }
 
 .details {
