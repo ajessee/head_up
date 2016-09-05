@@ -1,5 +1,5 @@
 <!-- Stephanie Section -->
-<section id="headup" class="bg-gray">
+<section id="headup" class="jumbotron">
     <div class="container text-center wow fadeIn">
         <div class="row">
             <div class="col-lg-12">
@@ -203,33 +203,6 @@
 <section class="portfolio-carousel wow fadeIn">
     <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
     <!-- Carousel Item 1 -->
-    <div class="item" style="background-image: url(<%= asset_path 'belk.jpg' %>)">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 col-md-push-7">
-                    <div class="project-details">
-                        <span class="project-name">Belk</span>
-                        <span class="project-description">Energy efficiency and GHG reductions in retail space</span>
-                        <hr class="colored">
-                        <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-7 col-md-pull-5 hidden-xs">
-                    <div class="device-container">
-                        <div class="device-mockup macbook portrait black">
-                            <div class="device">
-                                <div class="screen">
-                                    <%= image_tag("sjbelk.jpg", alt: "Screen1", class: "img-responsive") %>
-                                    <!-- <img src="assets/images/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt=""> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel Item 2 -->
     <div class="item" style="background-image: url(<%= asset_path 'root.jpg' %>)">
         <div class="container-fluid">
             <div class="row">
@@ -238,17 +211,16 @@
                         <span class="project-name">Root</span>
                         <span class="project-description">Consulting</span>
                         <hr class="colored">
-                        <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light details">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                     </div>
                 </div>
                 <div class="col-md-7 col-md-pull-5 hidden-xs">
                     <div class="device-container">
                         <div class="device-mockup macbook portrait black">
                             <div class="device">
-                                <div class="screen">
+                             <!--    <div class="screen">
                                     <%= image_tag("root2.jpg", alt: "Screen2", class: "img-responsive") %>
-                                    <!-- <img src="assets/images/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt=""> -->
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -256,6 +228,34 @@
             </div>
         </div>
     </div>
+    
+    <!-- Carousel Item 2 -->
+    <div class="item" style="background-image: url(<%= asset_path 'belk.jpg' %>)">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7">
+                    <div class="project-details">
+                        <span class="project-name">Belk</span>
+                        <span class="project-description">Energy efficiency and GHG reductions in retail space</span>
+                        <hr class="colored">
+                        <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light details">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-pull-5 hidden-xs">
+                    <div class="device-container">
+                        <div class="device-mockup macbook portrait black">
+                            <div class="device">
+                              <!--   <div class="screen">
+                                    <%= image_tag("sjbelk.jpg", alt: "Screen1", class: "img-responsive") %>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Carousel Item 3 -->
 <!--     <div class="item" style="background-image: url(<%= asset_path 'bg-3.jpg' %>)">
         <div class="container-fluid">
@@ -375,7 +375,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="lead">"I'm never going to work with another consulting company again. These guys are the cat's pyjamas"</p>
+                                <p class="lead">"I'm never going to work with any another consulting company again. These guys are the cat's pyjamas"</p>
                                 <hr class="colored">
                                 <p class="quote">After suffering through a parade of incompetent assholes, Head Up was like a breath of fresh air blowing away the stank!</p>
                                 <div class="testimonial-info">
@@ -457,6 +457,18 @@
         </div>
     </div>
 </section>
+
+<aside class="cta-quote" style="background-image: url(<%= asset_path 'standout.jpg' %>);">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <span class="quote">“Why fit in, when you were born to stand out?”</span>
+                <hr class=" colored">
+                <span class="quote">Dr. Seuss</span>
+            </div>
+        </div>
+    </div>
+</aside>
 
 <!-- Portfolio Grid Section -->
 <section id="blog">

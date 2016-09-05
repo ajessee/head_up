@@ -26,10 +26,21 @@
 
 .portfolio-carousel .owl-controls .owl-prev,
 .portfolio-carousel .owl-controls .owl-next {
-  background-color: gray !important;
+  background-color: white !important;
+  color: black !important;
 }
 
 .testimonials .testimonials-carousel .owl-controls .owl-prev,
 .testimonials .testimonials-carousel .owl-controls .owl-next {
   background-color: gray !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-expanded {
+    display: none;
+  }
+}
+
+.details {
+  font-size: 35px; 
 }
