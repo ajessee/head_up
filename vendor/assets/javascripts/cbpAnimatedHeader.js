@@ -13,7 +13,7 @@ var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector( '.navbar-fixed-top' ),
 		didScroll = false,
-		changeHeaderOn = 200;
+		startFade = 600;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -26,11 +26,17 @@ var cbpAnimatedHeader = (function() {
 
 	function scrollPage() {
 		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.remove( header, 'navbar-expanded' );
-		}
-		else {
+		if ( sy >= startFade) {
+			debugger;
+			$(".navbar-expanded").fadeIn( 50, function() {
+    	classie.remove( header, 'navbar-expanded' );
+  		});
+		}	
+		if ( sy <= startFade) {
 			classie.add( header, 'navbar-expanded' );
+			$(".navbar-expanded").fadeOut( "slow", function() {
+			 console.log("It worked");
+			 });
 		}
 		didScroll = false;
 	}

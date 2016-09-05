@@ -1,5 +1,5 @@
 <!-- Stephanie Section -->
-<section id="headup" class="jumbotron">
+<section id="headup">
     <div class="container text-center wow fadeIn">
         <div class="row">
             <div class="col-lg-12">
@@ -150,19 +150,6 @@
     </div>
 </section>
 
-<!-- Quote Call to Action -->
-<aside class="cta-quote" style="background-image: url(<%= asset_path 'dream.jpg' %>);">
-    <div class="container wow fadeIn">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <span class="quote">“Whatever you can do or dream you can, begin it. / Boldness has genius, power, and magic in it.”</span>
-                <hr class=" colored">
-                <span class="quote">Goethe</span>
-            </div>
-        </div>
-    </div>
-</aside>
-
 <!-- Newsletter Signup Call to Action -->
 <section class="cta-form bg-dark">
     <div class="container text-center">
@@ -192,8 +179,21 @@
     </div>
 </section>
 
+<!-- Quote Call to Action -->
+<aside class="cta-quote" style="background-image: url(<%= asset_path 'dream.jpg' %>);">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <span class="quote">“Whatever you can do or dream you can, begin it. / Boldness has genius, power, and magic in it.”</span>
+                <hr class=" colored">
+                <span class="quote">Goethe</span>
+            </div>
+        </div>
+    </div>
+</aside>
+
 <!-- Portfolio Carousel Heading -->
-<section id="portfolio" class="bg-gray">
+<section id="portfolio">
     <div class="container text-center wow fadeIn">
         <h2>Portfolio</h2>
         <hr class="colored">
@@ -204,34 +204,7 @@
 <!-- Portfolio Carousel -->
 <section class="portfolio-carousel wow fadeIn">
     <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-    <!-- Carousel Item 1 -->
-    <div class="item" style="background-image: url(<%= asset_path 'root.jpg' %>)">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 col-md-push-7">
-                    <div class="project-details">
-                        <span class="project-name">Root</span>
-                        <span class="project-description">Consulting</span>
-                        <hr class="colored">
-                        <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light details">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-7 col-md-pull-5 hidden-xs">
-                    <div class="device-container">
-                        <div class="device-mockup macbook portrait black">
-                            <div class="device">
-                             <!--    <div class="screen">
-                                    <%= image_tag("root2.jpg", alt: "Screen2", class: "img-responsive") %>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Carousel Item 2 -->
+    <!-- Carousel Item 1 -->    
     <div class="item" style="background-image: url(<%= asset_path 'belk.jpg' %>)">
         <div class="container-fluid">
             <div class="row">
@@ -249,6 +222,33 @@
                             <div class="device">
                               <!--   <div class="screen">
                                     <%= image_tag("sjbelk.jpg", alt: "Screen1", class: "img-responsive") %>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Item 2 -->
+    <div class="item" style="background-image: url(<%= asset_path 'root.jpg' %>)">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7">
+                    <div class="project-details">
+                        <span class="project-name">Root</span>
+                        <span class="project-description">Consulting</span>
+                        <hr class="colored">
+                        <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light details">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-pull-5 hidden-xs">
+                    <div class="device-container">
+                        <div class="device-mockup macbook portrait black">
+                            <div class="device">
+                             <!--    <div class="screen">
+                                    <%= image_tag("root2.jpg", alt: "Screen2", class: "img-responsive") %>
                                 </div> -->
                             </div>
                         </div>
