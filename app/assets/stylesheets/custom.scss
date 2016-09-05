@@ -41,6 +41,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  #mobile-full {
+      height: 100%;
+  }
+}
+
 .details {
   font-size: 35px; 
 }
