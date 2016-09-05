@@ -42,9 +42,15 @@
 }
 
 @media (max-width: 767px) {
+
+  .navbar-expanded {
+  display: none;
+  }
+
   #mobile-full {
       height: 100%;
   }
+
   #services {
     padding: 25px 0;
     }
