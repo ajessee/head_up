@@ -7,7 +7,11 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i> Menu
             </button>
+            <% if !current_page?("/") %>
                 <%= link_to image_tag("people_white.svg", alt: "Logo", class: "img-responsive"),   root_path, class: "navbar-brand page-scroll"  %>
+            <% else %>
+                <%= link_to image_tag("people_white.svg", alt: "Logo", class: "img-responsive"),   "#page-top", class: "navbar-brand page-scroll"  %>
+            <% end %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -15,25 +19,25 @@
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#headup">Head Up</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#headup" : "href=/#headup" %> >Head Up</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#services" : "href=/#services" %> >Services</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#process">Process</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#process" : "href=/#process" %> >Process</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#portfolio" : "href=/#portfolio" %> >Portfolio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#testimonials">Testimonials</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#testimonials" : "href=/#testimonials" %> >Testimonials</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#contact" : "href=/#contact" %> >Contact</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#blog">Blog</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#blog" : "href=/#blog" %> >Blog</a>
                 </li>
             </ul>
         </div>
