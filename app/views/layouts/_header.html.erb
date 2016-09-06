@@ -1,5 +1,3 @@
-<!-- -->
-
 <!-- Navigation -->
 <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
 <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
@@ -9,9 +7,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i> Menu
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <%= image_tag("people_white.svg", alt: "Logo", class: "img-responsive") %> 
-            </a>
+            <%=  link_to image_tag("people_white.svg", alt: "Logo", class: "img-responsive"),   root_path, class: "navbar-brand page-scroll" %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -44,18 +40,9 @@
     </div>
 </nav>
 
-<!-- Header -->
-<header id="mobile-full" style="background-image: url(<%= asset_path 'hello.jpg' %>);">
-    <div class="intro-content">
-        <div class="brand-name">Head Up</div>
-        <%= image_tag("people_white.svg", alt: "Profile", class: "img-responsive img-centered") %>
-        <hr class="colored">
-        <div class="brand-name-subtext">Know Your Power</div>
-    </div>
-    <div class="scroll-down">
-        <a class="btn page-scroll" href="#headup"><i class="fa fa-angle-down fa-fw"></i></a>
-    </div>
-</header>
+<%= if !current_page?("/")
+        javascript_tag "document.getElementsByClassName('navbar-fixed-top')[0].className = 'navbar navbar-inverse navbar-fixed-top';"
+    end %>
 
 <!-- Video Header -->
 <!-- <header class="video">

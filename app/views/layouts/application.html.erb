@@ -8,10 +8,12 @@
     <title> <%= full_title(yield(:title)) %> </title>
     <%= render 'layouts/fonts' %>
     <%= render 'layouts/shim' %>
-  </head>
-  <body id="page-top">
     <%= render 'layouts/header' %>
+  </head>
+  <body>
       <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
+
+<!-- id="page-top" -->
