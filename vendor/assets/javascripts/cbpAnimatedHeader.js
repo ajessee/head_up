@@ -34,7 +34,6 @@ var cbpAnimatedHeader = (function() {
 		if ( sy <= startFade) {
 			classie.add( header, 'navbar-expanded' );
 			$(".navbar-expanded").fadeOut( "slow", function() {
-			 console.log("It worked");
 			 });
 		}
 		didScroll = false;
