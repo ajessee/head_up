@@ -18,6 +18,11 @@
                 <li class="hidden">
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
+                <% if Rails.env.development? %>
+                    <li>
+                        <a data-toggle="modal" data-target="#myModal">Debug</a>
+                    </li>
+                <% end %>
                 <li>
                     <a class="page-scroll" <%= current_page?("/") ? "href=#headup" : "href=/#headup" %> >Head Up</a>
                 </li>
@@ -43,6 +48,20 @@
         </div>
     </div>
 </nav>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Debug</h4>
+      </div>
+      <div class="modal-body">
+        <%= debug(params) %>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <%= if !current_page?("/")
         javascript_tag "document.getElementsByClassName('navbar-fixed-top')[0].className = 'navbar navbar-inverse navbar-fixed-top';"
