@@ -14,6 +14,7 @@ var cbpAnimatedHeader = (function() {
 		header = document.querySelector( '.navbar-fixed-top' ),
 		didScroll = false,
 		startFade = 400;
+		reFade = 200;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -31,7 +32,7 @@ var cbpAnimatedHeader = (function() {
     	classie.remove( header, 'navbar-expanded' );
   		});
 		}	
-		if ( sy <= startFade) {
+		if ( sy <= startFade && window.location.pathname === "/") {
 			classie.add( header, 'navbar-expanded' );
 			$(".navbar-expanded").fadeOut( "slow", function() {
 			 });
