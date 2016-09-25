@@ -8,9 +8,9 @@
                 <i class="fa fa-bars"></i> Menu
             </button>
             <% if !current_page?("/") %>
-                <%= link_to image_tag("people_white.svg", alt: "Logo", class: "img-responsive"),   root_path, class: "navbar-brand page-scroll"  %>
+                <%= link_to image_tag("OrangeGiraffe.svg", alt: "Logo", class: "img-responsive"),   root_path, class: "navbar-brand page-scroll"  %>
             <% else %>
-                <%= link_to image_tag("people_white.svg", alt: "Logo", class: "img-responsive"),   "#page-top", class: "navbar-brand page-scroll"  %>
+                <%= link_to image_tag("OrangeGiraffe.svg", alt: "Logo", class: "img-responsive"),   "#page-top", class: "navbar-brand page-scroll"  %>
             <% end %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -24,26 +24,32 @@
                     </li>
                 <% end %>
                 <li>
-                    <a class="page-scroll" <%= current_page?("/") ? "href=#headup" : "href=/#headup" %> >Head Up</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#stephanie_who" : "href=/#stephanie_who" %> >Stephanie Who?</a>
                 </li>
                 <li>
-                    <a class="page-scroll" <%= current_page?("/") ? "href=#services" : "href=/#services" %> >Services</a>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#work_with_me" : "href=/#work_with_me" %> >Work With Me</a>
                 </li>
+                <li>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#power_up" : "href=/#power_up" %> >Power Up!</a>
+                </li>
+                <li>
+                    <a class="page-scroll" <%= current_page?("/") ? "href=#get_in_touch" : "href=/#get_in_touch" %> >Get In Touch</a>
+                </li>
+
+                <!--   These are the links that we will eventually implement.          
                 <li>
                     <a class="page-scroll" <%= current_page?("/") ? "href=#process" : "href=/#process" %> >Process</a>
                 </li>
                 <li>
                     <a class="page-scroll" <%= current_page?("/") ? "href=#portfolio" : "href=/#portfolio" %> >Portfolio</a>
-                </li>
+                </li> 
                 <li>
                     <a class="page-scroll" <%= current_page?("/") ? "href=#testimonials" : "href=/#testimonials" %> >Testimonials</a>
                 </li>
                 <li>
-                    <a class="page-scroll" <%= current_page?("/") ? "href=#contact" : "href=/#contact" %> >Contact</a>
-                </li>
-                <li>
                     <a class="page-scroll" <%= current_page?("/") ? "href=#blog" : "href=/#blog" %> >Blog</a>
-                </li>
+                </li> 
+                -->
             </ul>
         </div>
     </div>
@@ -80,4 +86,4 @@
     <div class="scroll-down page-scroll">
         <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down"></i></a>
     </div>
-</header> -->
+</header>

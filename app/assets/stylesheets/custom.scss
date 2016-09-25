@@ -3,9 +3,52 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+$pantoneOrange: #FF6C2F;
+$pantoneCoolGrey: #53565A;
+
+@font-face {
+font-family: MajestiBannerBold;
+src: url("Majesti-Banner-Bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: MajestiBannerBoldItalic;
+src: url("Majesti-Banner-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+font-family: MajestiBannerBook;
+src: url("Majesti-Banner-Book.otf") format("opentype");
+}
+
+@font-face {
+font-family: NexaBold;
+src: url("Nexa Bold.otf") format("opentype");
+}
+
+p {
+  font-family: MajestiBannerBook;
+  font-size: 22px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: MajestiBannerBold;
+  font-weight: 900;
+  text-transform: none;
+}
+
+.navbar-inverse {
+  background-color: $pantoneCoolGrey
+}
 
 .navbar-inverse .navbar-nav > li > a {
-  font-family: sans-serif;
+  font-family: NexaBold;
   font-size: 18px;
   color: white;
   font-weight: bold;
@@ -14,14 +57,14 @@
 .navbar-inverse .navbar-nav > li > a:hover {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    color: dimgray;
+    color: $pantoneOrange;
     font-weight: bold;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: dimgray;
+    background-color: $pantoneOrange;
 }
 
 .portfolio-carousel .owl-controls .owl-prev,
@@ -35,10 +78,33 @@
   background-color: gray !important;
 }
 
+hr.colored {
+    border-color: $pantoneOrange;
+}
+
 @media (min-width: 768px) {
-    .navbar-expanded {
-    display: none;
+
+  .navbar-expanded {
+  display: none;
   }
+
+  #headerLogo {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  #stephanie_who {
+    height: 100vh;
+  }
+
+  #get_in_touch {
+    height: 100vh;
+  }
+
+  textarea.form-control {
+    height: 5em;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -51,9 +117,21 @@
       height: 100%;
   }
 
-  #services {
-    padding: 25px 0;
-    }
+  section {
+  padding: 1em 0;
+  }
+
+
+  #headerLogo {
+    width: 91%;
+    margin-top: 61%;
+  }
+
+  textarea.form-control {
+    height: 2em;
+  }
+
+
 }
 
 .details {
