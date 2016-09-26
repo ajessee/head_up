@@ -3,8 +3,20 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+/* fonts */
+
 $pantoneOrange: #FF6C2F;
 $pantoneCoolGrey: #53565A;
+
+@font-face {
+font-family: NexaBold;
+src: url("Nexa Bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: NexaLight;
+src: url("Nexa Light.otf") format("opentype");
+}
 
 @font-face {
 font-family: MajestiBannerBold;
@@ -21,10 +33,8 @@ font-family: MajestiBannerBook;
 src: url("Majesti-Banner-Book.otf") format("opentype");
 }
 
-@font-face {
-font-family: NexaBold;
-src: url("Nexa Bold.otf") format("opentype");
-}
+
+/* General Styling */
 
 p {
   font-family: MajestiBannerBook;
@@ -43,28 +53,20 @@ h6 {
   text-transform: none;
 }
 
-.navbar-inverse {
-  background-color: $pantoneCoolGrey
+.top-space-10-percent{
+  margin-top: 4%;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.input-group-lg > .input-group-btn > .btn {
   font-family: NexaBold;
-  font-size: 18px;
-  color: white;
-  font-weight: bold;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    color: $pantoneOrange;
-    font-weight: bold;
-    background-color: transparent;
+.input-group .form-control {
+  font-family: NexaLight;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color: $pantoneOrange;
+.floating-label-form-group input {
+  font-family: NexaLight;
 }
 
 .portfolio-carousel .owl-controls .owl-prev,
@@ -82,10 +84,75 @@ hr.colored {
     border-color: $pantoneOrange;
 }
 
+.details {
+  font-size: 35px; 
+}
+
+.float-right {
+  float: right;
+}
+
+.btn-outline-dark {
+  font-family: NexaBold;
+  color: black;
+  font-size: 1.5em;
+  text-transform: none;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  background: $pantoneOrange;
+  border-color: $pantoneOrange;
+  outline: none;
+}
+
+#stephanieMain {
+  border-radius: 25px;
+}
+
+#flash {
+  margin: -3% 10% -12% 10%;
+  text-align: center;
+}
+
+/* Navbar Styling */
+
+.navbar-inverse {
+  background-color: $pantoneCoolGrey;
+  border-color: $pantoneCoolGrey
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-family: NexaBold;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    font-family: NexaBold;
+    font-size: 20px;
+    color: $pantoneOrange;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: $pantoneOrange;
+}
+
+/* Styling Depending on Desktop or Mobile */
+
 @media (min-width: 768px) {
 
   .navbar-expanded {
   display: none;
+  }
+
+  .navbar-inverse .navbar-brand img {
+    margin-top: -24px;
+    height: 67px;
   }
 
   #headerLogo {
@@ -97,12 +164,43 @@ hr.colored {
     height: 100vh;
   }
 
+  #power_up {
+    height: 100vh;
+  }
+
   #get_in_touch {
     height: 100vh;
   }
 
   textarea.form-control {
     height: 5em;
+    font-family: NexaLight;
+  }
+
+  #quote_1 {
+    font-family: MajestiBannerBoldItalic;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
+    line-height: 120%;
+  }
+
+  #quote_1_author {
+    font-family: MajestiBannerBold;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
+  }
+
+  #quote_2 {
+    font-family: MajestiBannerBoldItalic;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
+    line-height: 120%;
+  }
+
+  #quote_2_author {
+    font-family: MajestiBannerBold;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
   }
 
 }
@@ -129,18 +227,36 @@ hr.colored {
 
   textarea.form-control {
     height: 2em;
+    font-family: NexaLight;
   }
 
+  #quote_1 {
+    font-family: MajestiBannerBoldItalic;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2em;
+    line-height: 120%;
+  }
 
+  #quote_1_author {
+    font-family: MajestiBannerBold;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2em;
+  }
+
+  #quote_2 {
+    font-family: MajestiBannerBoldItalic;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2em;
+    line-height: 120%;
+  }
+
+  #quote_2_author {
+    font-family: MajestiBannerBold;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2em;
+  }
 }
 
-.details {
-  font-size: 35px; 
-}
-
-.float-right {
-  float: right;
-}
 
 /* forms */
 
@@ -152,10 +268,6 @@ hr.colored {
   }
 }
 
-#flash {
-  margin: -3% 10% -12% 10%;
-  text-align: center;
-}
 
 
 
