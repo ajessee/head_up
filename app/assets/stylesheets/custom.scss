@@ -115,11 +115,31 @@ hr.colored {
   text-align: center;
 }
 
+header .scroll-down .btn {
+  color: $pantoneOrange;
+  border: 2px solid $pantoneOrange;;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+            filter: drop-shadow( -5px -5px 5px #000 ); /* Same syntax as box-shadow */
+}
+
+.shadow2 {
+    -webkit-filter: drop-shadow(-4px 3px 4px #000);
+        filter: drop-shadow(-4px 3px 4px #000); /* Same syntax as box-shadow */
+}
+
+.input-group-lg > .input-group-btn > .btn {
+  background-color: $pantoneOrange;
+  border-color: $pantoneOrange;
+}
+
 /* Navbar Styling */
 
 .navbar-inverse {
   background-color: $pantoneCoolGrey;
-  border-color: $pantoneCoolGrey
+  border-color: $pantoneCoolGrey;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -157,16 +177,14 @@ hr.colored {
 
   #headerLogo {
     width: 100%;
-    margin-top: 20%;
+    margin-bottom: 30%;
   }
 
   #stephanie_who {
     height: 100vh;
   }
 
-  #power_up {
-    height: 100vh;
-  }
+
 
   #get_in_touch {
     height: 100vh;
@@ -222,7 +240,6 @@ hr.colored {
 
   #headerLogo {
     width: 91%;
-    margin-top: 61%;
   }
 
   textarea.form-control {
