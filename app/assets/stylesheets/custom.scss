@@ -10,12 +10,12 @@ $pantoneCoolGrey: #53565A;
 
 @font-face {
 font-family: NexaBold;
-src: url("fonts/Nexa-Bold.otf") format("opentype");
+src: asset-url(Nexa-Bold.otf") format("opentype");
 }
 
 @font-face {
 font-family: NexaLight;
-src: url("fonts/Nexa-Light.otf") format("opentype");
+src: asset-url(Nexa-Light.otf") format("opentype");
 }
 
 @font-face {
