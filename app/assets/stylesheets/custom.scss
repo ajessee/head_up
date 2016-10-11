@@ -33,36 +33,152 @@ font-family: MajestiBannerBook;
 src: font-url("Majesti-Banner-Book.otf") format("opentype");
 }
 
+@font-face {
+font-family: MajestiBannerBookItalic;
+src: font-url("Majesti-Banner-BookItalic.otf") format("opentype");
+}
 
-/* General Styling */
+@font-face {
+font-family: MajestiBannerHeavy;
+src: font-url("Majesti-Banner-Heavy.otf") format("opentype");
+}
 
-p {
-  font-family: MajestiBannerBook;
-  font-size: 22px;
+@font-face {
+font-family: MajestiBannerLight;
+src: font-url("Majesti-Banner-Light.otf") format("opentype");
+}
+
+@font-face {
+font-family: MajestiBannerLightItalic;
+src: font-url("Majesti-Banner-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+font-family: MajestiBannerMedium;
+src: font-url("Majesti-Banner-Medium.otf") format("opentype");
+}
+
+@font-face {
+font-family: MajestiBannerMediumItalic;
+src: font-url("Majesti-Banner-MediumItalic.otf") format("opentype");
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* General Styling */
+
+h1 {
   font-family: MajestiBannerBold;
-  font-weight: 900;
+  font-size: 4em;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: center;
   text-transform: none;
+}
+
+h2 {
+  font-family: MajestiBannerHeavy;
+  font-size: 3em;
+  letter-spacing: .5px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+h3 {
+  font-family: MajestiBannerBook;
+  font-size: 3em;
+  letter-spacing: .5px;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+
+h4 {
+  font-family: NexaBold;
+  font-size: 3.5em;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+h5 {
+  font-family: NexaLight;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+
+h6 {
+  font-family: MajestiBannerMedium;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+p {
+  font-family: MajestiBannerLight;
+  font-size: 22px;
+}
+
+p.majesti-book {
+  font-family: MajestiBannerBook;
+  font-size: 2em;
+  letter-spacing: -0.7px;
+  margin-bottom: 30px;
+  text-transform: none;
+  text-align: left;
+  color: white;
+}
+
+p.nexa-bold {
+  font-family: NexaBold;
+  font-size: 2em;
+  letter-spacing: -0.7px;
+  margin-bottom: 10px;
+  text-transform: none;
+  text-align: center;
+}
+
+p.nexa-light {
+  font-family: NexaLight;
+  font-size: 1.9em;
+  letter-spacing: -0.7px;
+  margin-bottom: 20px;
+  text-transform: none;
+  text-align: left;
+}
+
+p.bigger {
+  font-size: 2.5em;
+}
+
+p.smaller {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+p.center {
+  text-align: center;
+}
+
+#stephanieMain {
+  margin-top: 5%;
 }
 
 .top-space-5-percent{
   margin-top: 5%;
 }
 
+
 .input-group-lg > .input-group-btn > .btn {
-  font-family: NexaBold;
+  font-family: MajestiBannerHeavy;
+  text-transform: none;
+  font-size: 20px;
 }
 
 .input-group .form-control {
-  font-family: NexaLight;
+  font-family: MajestiBannerHeavy;
 }
 
 .floating-label-form-group input {
@@ -238,6 +354,15 @@ hr.colored {
 }
 
 @media (max-width: 767px) {
+
+  p.majesti-book {
+    font-family: MajestiBannerBook;
+    font-size: 2em;
+    letter-spacing: -0.7px;
+    margin-bottom: 10px;
+    text-transform: none;
+    text-align: center;
+  }
 
   .navbar-expanded {
   display: none;
