@@ -10,27 +10,27 @@ $pantoneCoolGrey: #53565A;
 
 @font-face {
 font-family: NexaBold;
-src: url("fonts/Nexa-Bold.otf") format("opentype");
+src: font-url("Nexa-Bold.otf") format("opentype");
 }
 
 @font-face {
 font-family: NexaLight;
-src: url("fonts/Nexa-Light.otf") format("opentype");
+src: font-url("Nexa-Light.otf") format("opentype");
 }
 
 @font-face {
 font-family: MajestiBannerBold;
-src: url("Majesti-Banner-Bold.otf") format("opentype");
+src: font-url("Majesti-Banner-Bold.otf") format("opentype");
 }
 
 @font-face {
 font-family: MajestiBannerBoldItalic;
-src: url("Majesti-Banner-BoldItalic.otf") format("opentype");
+src: font-url("Majesti-Banner-BoldItalic.otf") format("opentype");
 }
 
 @font-face {
 font-family: MajestiBannerBook;
-src: url("Majesti-Banner-Book.otf") format("opentype");
+src: font-url("Majesti-Banner-Book.otf") format("opentype");
 }
 
 
