@@ -11,8 +11,8 @@
   }
 
   .intro-text-spacing {
-    margin-bottom: 13% !important;
-    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+    margin-top: 8% !important;
   }
 
   .bullet-spacing {
@@ -30,6 +30,18 @@
 
   #headerLogo {
     width: 100%;
+  }
+
+  #stephanie_who_2 {
+    height: 100vh;
+  }
+
+  .desktop-hide {
+    display: none;
+  }
+
+  .portfolio-carousel .item {
+      padding: 60px 55px 155px;
   }
 
   textarea.form-control {

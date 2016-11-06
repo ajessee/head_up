@@ -13,6 +13,25 @@
     font-size: 1.5em;
   }
 
+  h4.h4-mobile {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  h4.mobile-hide {
+    display: none;
+  }
+
+  ul.no-bullet-mobile {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  p.bullet-mobile {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
   p.nexa-light {
   text-align: center;
   }

@@ -98,6 +98,7 @@ p.center {
   text-align: center;
 }
 
+
 .row {
   margin-left: 0px;
   margin-right: 0px;
@@ -127,6 +128,14 @@ p.center {
   text-align: center;
 }
 
+#footerLogo {
+  height: 75px;
+}
+
+footer.footer {
+  padding: 25px 0 20px;
+}
+
 .top-space-5-percent{
   margin-top: 5%;
 }
@@ -149,6 +158,12 @@ hr.colored {
 
 .orange {
   color: $pantoneOrange;
+}
+
+.portfolio-carousel {
+  padding: 0;
+  color: black;
+  background-color: white;
 }
 
 /* Navbar Styling */
@@ -196,8 +211,8 @@ hr.colored {
 
 .portfolio-carousel .owl-controls .owl-prev,
 .portfolio-carousel .owl-controls .owl-next {
-  background-color: white !important;
-  color: black !important;
+  background-color: $pantoneOrange !important;
+  color: white !important;
 }
 
 .testimonials .testimonials-carousel .owl-controls .owl-prev,
