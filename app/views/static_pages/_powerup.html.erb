@@ -1,33 +1,15 @@
-<section class="cta-form bg-dark" id="power_up">
-
-    <div class="row text-center content-row">
-        <div class="col-md-3 col-sm-5">
-            <%= image_tag("KYPOrange.svg", alt: "Know Your Power Watermark", class: "img-responsive center-block", id: "knowYourPowerLogo") %>
+<section id="power_up">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h4>Get In Touch</h4>
+                <hr class="colored">
+                <p class="nexa-bold center mobile-smaller">Tell us about the power you're trying to access.  We'll help you find it.</p>
+            </div>
         </div>
-        <div class="col-md-9 col-sm-6">
-            <h1>Want to know your power?  Want to connect with others who do too?</h1>
-            <hr class="colored">
-            <h2>Sign up for our newsletter by entering your email below!</h2>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 top-space-5-percent">
-                    <!-- MailChimp Signup Form -->
-                    <div id="mc_embed_signup">
-                        <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
-                        <form role="form" action="//headupinc.us14.list-manage.com/subscribe/post?u=707e6a775a39a3e7d1425466f&amp;id=e35bb3ff0a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                            <div class="input-group input-group-lg">
-                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
-                                <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Power Up!</button>
-                                </span>
-                            </div>
-                            <div id="mce-responses">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End MailChimp Signup Form -->
-                </div>
+        <div class="row content-row">
+            <div class="col-lg-8 col-sm-offset-2">
+                <%= render 'leads/newLeadForm' %> 
             </div>
         </div>
     </div>

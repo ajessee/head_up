@@ -98,15 +98,11 @@ p.center {
   text-align: center;
 }
 
-
 .row {
   margin-left: 0px;
   margin-right: 0px;
 }
 
-#power_up {
-  height: 100vh;
-}
 
 .shadow {
   -webkit-filter: drop-shadow( 2px 2px 3px white );
@@ -205,8 +201,18 @@ hr.colored {
   font-family: NexaBold;
 }
 
+textarea.form-control {
+  color: $pantoneOrange;
+}
+
+.floating-label-form-group-with-value label {
+  text-align: left;
+}
+
 .floating-label-form-group input {
   font-family: NexaLight;
+  color: $pantoneOrange;
+  text-align: left;
 }
 
 .portfolio-carousel .owl-controls .owl-prev,

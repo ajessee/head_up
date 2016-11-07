@@ -1,16 +1,64 @@
-<section id="get_in_touch">
-    <div class="container wow fadeIn">
+<section class="cta-form bg-dark" id="get_in_touch">
+
+    <div class="container wow">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h4>Get In Touch</h4>
                 <hr class="colored">
-                <p class="nexa-bold center mobile-smaller">Tell us about the power you're trying to access.  We'll help you find it.</p>
-            </div>
-        </div>
-        <div class="row content-row">
-            <div class="col-lg-8 col-sm-offset-2">
-                <%= render 'leads/newLeadForm' %> 
             </div>
         </div>
     </div>
+    <div class="row text-center content-row">
+        <div class="col-md-6 col-md-offset-3">
+                <p class="nexa-bold center mobile-smaller">Tell us about the power you're trying to access.  We'll help you find it.</p>
+                <%= render 'leads/newLeadForm' %> 
+        </div>
+    </div>
+    <div class="container wow">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <%= image_tag("KYPOrange.svg", alt: "Know Your Power Watermark", class: "img-responsive center-block", id: "knowYourPowerLogo") %>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center content-row">
+        <div class="col-md-12 col-sm-6">
+            <p class="nexa-bold center mobile-smaller">Or, just sign up for our newsletter by entering your email below!</p>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
+                        <form role="form" action="//headupinc.us14.list-manage.com/subscribe/post?u=707e6a775a39a3e7d1425466f&amp;id=e35bb3ff0a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                            <div class="input-group input-group-lg">
+                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Power Up!</button>
+                                </span>
+                            </div>
+                            <div id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End MailChimp Signup Form -->
+                </div>
+            </div>
+            <div class="row top-space-5-percent">
+                <div class="col-lg-8 col-lg-offset-2">
+                     <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/wugzoogle"><i class="fa fa-facebook fa-fw fa-5x orange"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/HeadUpInc"><i class="fa fa-twitter fa-fw fa-5x orange"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/juddstephanie"><i class="fa fa-linkedin fa-fw fa-5x orange"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
