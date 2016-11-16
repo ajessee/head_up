@@ -1,3 +1,4 @@
+@import 'bootstrap';
 /* General Styling */
 
 $pantoneOrange: #FF6C2F;
@@ -103,7 +104,6 @@ p.center {
   margin-right: 0px;
 }
 
-
 .shadow {
   -webkit-filter: drop-shadow( 2px 2px 3px white );
   filter: drop-shadow( 2px 2px 3px white ); /* Same syntax as box-shadow */
@@ -174,7 +174,6 @@ hr.colored {
   font-size: 20px;
   color: white;
   font-weight: bold;
-
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -252,9 +251,25 @@ textarea.form-control {
 }
 
 #error_explanation {
-  color: red;
+  color: $pantoneCoolGrey;
   ul {
-    color: red;
+    color: $pantoneOrange;
+    font-size: 1.5em;
     margin: 0 0 30px 0;
   }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    background-color: $pantoneCoolGrey;
+  }
+}
+
+.alert-danger {
+    background-color: $pantoneOrange;
+    border-color: black;
+    color: black;
+    font-size: 2em;
+    text-align: center;
 }

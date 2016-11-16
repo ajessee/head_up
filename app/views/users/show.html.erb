@@ -1,3 +1,7 @@
+<% if !flash.empty? %>
+    <%= render 'shared/flash' %>
+<% end %>
+
 <section>
 <div>Name: <%= @user.name %> </div>
 <div>Email: <%= @user.email %></div>
