@@ -36,6 +36,17 @@
     height: 100vh;
   }
 
+  #user_login {
+    height: 100vh;
+  }
+
+  .vert-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .desktop-hide {
     display: none;
   }

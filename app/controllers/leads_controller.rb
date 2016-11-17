@@ -8,7 +8,9 @@ class LeadsController < ApplicationController
     @lead = Lead.new(user_params)
     if @lead.save
       flash[:success] = "Thanks for reaching out! We'll be contacting you shortly."
-        MyMailer.send_new_lead_email(user_params).deliver
+        if Rails.env.production?
+          MyMailer.send_new_lead_email(user_params).deliver
+        end
       redirect_to '/#flash'
     else
       render 'oldLeadForm'
