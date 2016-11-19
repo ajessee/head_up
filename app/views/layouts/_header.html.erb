@@ -20,7 +20,7 @@
                 </li>
                 <% if Rails.env.development? %>
                     <li>
-                        <a data-toggle="modal" data-target="#myModal">Debug</a>
+                        <a data-toggle="modal" data-target="#debugModal">Debug</a>
                     </li>
                 <% end %>
                 <li>
@@ -55,15 +55,29 @@
     </div>
 </nav>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+<div class="modal fade" id="debugModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="closeModal"aria-hidden="true"><i class="fa fa-times fa-1x"></i></span></button>
         <h4 class="modal-title">Debug</h4>
       </div>
       <div class="modal-body">
         <%= debug(params) %>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="rememberModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="closeModal" aria-hidden="true"><i class="fa fa-times fa-1x"></i></span></button>
+        <h4 class="modal-title">What is this?</h4>
+      </div>
+      <div class="modal-body">
+        <h4>When you select this checkbox, we'll put an encrypted cookie on your browser so that you don't have to log-in again when you return to headupinc.com, even if you close your browser. Don't worry, you can log out at anytime to delete this <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">cookie</a>.</h4>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

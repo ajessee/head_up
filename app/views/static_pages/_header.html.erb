@@ -3,8 +3,15 @@
     <div class="intro-content">
         <%= image_tag("OrangeHorinzontal.svg", alt: "Head Up Logo", class: "img-responsive img-centered", id: "headerLogo") %>
     </div>
-    <div class="scroll-down">
-        <a class="btn page-scroll" href="#work_with_me"><i class="fa fa-angle-double-down fa-5x"></i></a>
+    <div class="scroll-down row">
+        <div class="col-md-12" >
+            <a class="btn page-scroll vert-center padding-arrow" href="#work_with_me"><i class="fa fa-angle-double-down fa-5x"></i></a>
+            <% if logged_in? %>
+            <a class="btn float-right padding-signin" href="/logout" data-method="delete"><i class="fa fa-sign-out fa-1x"></i></a>
+            <% else %>
+            <a class="btn float-right padding-signin" href="/login"><i class="fa fa-sign-in fa-1x"></i></a>
+            <% end %>
+        </div>
     </div>
 </header>
 

@@ -162,6 +162,34 @@ hr.colored {
   background-color: white;
 }
 
+.modal-content {
+  background-color: $pantoneCoolGrey;
+}
+
+.modal-header {
+  font-family: NexaBold;
+  font-size: 1em;
+  text-align: center;
+  color: $pantoneOrange;
+}
+
+.modal-body {
+  font-family: NexaLight;
+  font-size: .5em;
+  color: $pantoneOrange;
+}
+
+.closeModal {
+  color: black;
+}
+
+.vert-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Navbar Styling */
 
 .navbar-inverse {
