@@ -36,6 +36,10 @@
     height: 100vh;
   }
 
+  #giraffeSectionLogo{
+    margin-top: -20px;
+  }
+
   #user_login {
     height: 100vh;
   }
@@ -63,6 +67,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+  }
+
+  .testimonials-carousel .item {
+      padding: 0 !important;
   }
 
   #quote_1 {

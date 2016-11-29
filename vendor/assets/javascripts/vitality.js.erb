@@ -73,7 +73,7 @@ $(document).ready(function() {
 
     $(".testimonials-carousel, .mockup-carousel").owlCarousel({
         singleItem: true,
-        navigation: true,
+        navigation: false,
         pagination: true,
         autoHeight: true,
         navigationText: [
@@ -108,8 +108,8 @@ $(document).ready(function() {
     // Formstone Background - Video Background Settings
     $("header.video").background({
         source: {
-            mp4: "<%= asset_path('peopleWorking.mp4') %>",
-            poster: "<%= asset_path('posterBackground.jpg') %>"
+            mp4: "<%= asset_path('rollercoaster.mp4') %>",
+            poster: "<%= asset_path('rollercoasterPoster.jpg') %>"
         }
     });
 
