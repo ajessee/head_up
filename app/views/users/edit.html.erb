@@ -1,0 +1,49 @@
+<!-- User Edit Profile Section -->
+<section id="user_edit" class="bg-dark">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h4>Edit your profile</h4>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <%= form_for(@user) do |f| %>
+                <%= render 'shared/error_messages', object: f.object %>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <%= f.label :name %>
+                            <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <%= f.label :email %>
+                            <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <%= f.label :password %>
+                            <%= f.password_field :password, class: "form-control", placeholder: "Enter Password" %>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <%= f.label :password_confirmation, "Confirmation" %>
+                            <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm Password" %>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                             <%= f.submit "Save Changes", class: "btn btn-outline-dark float-right" %>
+                       </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>
