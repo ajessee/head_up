@@ -4,21 +4,20 @@
 
 <section id="user_show" class="services bg-coolGrey">
     <div class="container">
-        <div class="row content-row">
-            <div class="col-lg-12">
-                <i class="fa fa-user fa-5x"></i>
-                <p class="nexa-light white_text">Hi <%= @user.name %>! </p>
-                <p class="nexa-light white_text">It is currently <%= Time.now %> </p>
-                <p class="nexa-light white_text">
-                    Your email: <%= @user.email %>
-                </p>
-                <p class="nexa-light white_text">
-                    Your account was created at <%= @user.created_at %>
-                </p>
-                <p class="nexa-light white_text">
-                    Your account was last updated at Updated at: <%= @user.updated_at %>
-                </p>
-            </div>
+        <div class="row content-row vert-center">
+          <div class="col-lg-12 text-center">
+              <i class="fa fa-user fa-5x"></i>
+              <p class="nexa-light-center white_text"><%= @user.name %></p>
+              <p class="nexa-light-center white_text">
+                  <%= @user.email %>
+              </p>
+              <p class="nexa-light-center white_text">
+                  Created: <%= time_ago_in_words(@user.created_at) %> ago
+              </p>
+              <p class="nexa-light-center white_text">
+                  Updated: <%= time_ago_in_words(@user.updated_at) %> ago
+              </p>
+          </div>
         </div>
     </div>
 </section>

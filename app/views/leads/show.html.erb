@@ -1,9 +1,20 @@
-<section>
-<div>Name: <%= @lead.name %> </div>
-<div>Email: <%= @lead.email %></div>
-<div>Phone: <%= @lead.phone %></div>
-<div>Message: <%= @lead.message %></div>
-<div>Created at: <%= @lead.created_at %></div>
-<div>Updated at: <%= @lead.updated_at %></div>
-<div>Current time: <%= Time.now %></div>
+<section id="lead_show" class="services bg-coolGrey">
+    <div class="container">
+        <div class="row content-row vert-center">
+          <div class="col-lg-12 text-center">
+              <i class="fa fa-user fa-5x"></i>
+              <p class="nexa-light-center white_text">Name: <%= @lead.name %></p>
+              <p class="nexa-light-center white_text">Email: <%= @lead.email %></p>
+              <p class="nexa-light-center white_text">Phone: <%= @lead.phone %></p>
+              <p class="nexa-light-center white_text">Message: <%= @lead.message %></p>
+
+              <p class="nexa-light-center white_text">
+                  Created: <%= time_ago_in_words(@lead.created_at) %> ago
+              </p>
+              <p class="nexa-light-center white_text">
+                  Updated: <%= time_ago_in_words(@lead.updated_at) %> ago
+              </p>
+          </div>
+        </div>
+    </div>
 </section>

@@ -1,7 +1,12 @@
 class LeadsController < ApplicationController
+  before_action :logged_in_user,  only: [:index]
 
   def show
     @lead = Lead.find(params[:id])  
+  end
+
+  def index
+    @leads = Lead.paginate(page: params[:page], per_page: 4)
   end
 
   def create

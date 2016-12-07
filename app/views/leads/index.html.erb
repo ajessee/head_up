@@ -1,0 +1,28 @@
+<section id="lead_index" class="services bg-coolGrey">
+    <div class="container">
+    <h1>Leads:</h1>
+        <div class="text-center">
+          <%= will_paginate  %>
+        </div>
+        <div class="row content-row">
+        <% @leads.each do |lead| %>
+          <div class="col-md-6 col-sm-6 text-center">
+              <i class="fa fa-user fa-5x"></i>
+              <p class="nexa-light-center white_text">Name: <%= lead.name %></p>
+              <p class="nexa-light-center white_text">Email: <%= lead.email %></p>
+              <p class="nexa-light-center white_text">Phone: <%= lead.phone %></p>
+              <p class="nexa-light-center white_text">Message: <%= lead.message %></p>
+
+              <p class="nexa-light-center white_text">
+                  Created: <%= time_ago_in_words(lead.created_at) %> ago
+              </p>
+              <p class="nexa-light-center white_text">
+                  Updated: <%= time_ago_in_words(lead.updated_at) %> ago
+              </p>
+              <hr class="colored">
+          </div>
+          <% end %>
+        </div>
+    </div>
+</section>
+

@@ -77,6 +77,15 @@ p.nexa-bold {
   text-align: left;
 }
 
+p.nexa-light-center {
+  font-family: NexaLight;
+  font-size: 2em;
+  letter-spacing: -0.7px;
+  margin-bottom: 10px;
+  text-transform: none;
+  text-align: center;
+}
+
 p.nexa-light {
   font-family: NexaLight;
   font-size: 1.9em;
@@ -188,6 +197,7 @@ hr.colored {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 /* Navbar Styling */
 

@@ -1,0 +1,27 @@
+<% if !flash.empty? %>
+    <%= render 'shared/flash' %>
+<% end %>
+
+<section id="user_index" class="services bg-coolGrey">
+    <div class="container">
+    <h1>Users:</h1>
+        <div class="row content-row">
+            <% @users.each do |user| %>
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-user fa-5x"></i>
+                    <p class="nexa-light-center white_text"><%= user.name %></p>
+                    <p class="nexa-light-center white_text">
+                        <%= user.email %>
+                    </p>
+                    <p class="nexa-light-center white_text">
+                        Created: <%= time_ago_in_words(user.created_at) %> ago
+                    </p>
+                    <p class="nexa-light-center white_text">
+                        Updated: <%= time_ago_in_words(user.updated_at) %> ago
+                    </p>
+                    <hr class="colored">
+                </div>
+            <% end %>
+        </div>
+    </div>
+</section>
