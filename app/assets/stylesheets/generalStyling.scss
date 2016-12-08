@@ -127,6 +127,14 @@ p.center {
   margin-top: 5%;
 }
 
+#user_login {
+  height: 100vh;
+}
+
+#admin {
+  height: 100vh;
+}
+
 #flash {
   margin: -3% 10% -12% 10%;
   text-align: center;
@@ -303,7 +311,7 @@ textarea.form-control {
   }
 }
 
-.alert-danger {
+.alert-danger, .alert-success {
     background-color: $pantoneOrange;
     border-color: black;
     color: black;

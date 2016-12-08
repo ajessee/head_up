@@ -1,10 +1,9 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
+  before_action :logged_in_user,  only: :admin
+  before_action :admin_user,      only: :admin
 
-  def contact
+  def admin
+    render 'admin'
   end
-
-  def about
-  end
+  
 end

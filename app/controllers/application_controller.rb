@@ -19,7 +19,16 @@ class ApplicationController < ActionController::Base
       # Confirms the correct user
       def correct_user
         @user = User.find(params[:id])
+        if !current_user?(@user)
         flash[:danger] = "Sorry, you're aren't allowed to access that."
-        redirect_to("/#flash") unless current_user?(@user)
+        redirect_to("/#flash") 
+        end
+      end
+
+      def admin_user
+        if !current_user.admin?
+        flash[:danger] = "Sorry, you've got to be an admin to access that."
+        redirect_to("/#flash")
+        end
       end
 end

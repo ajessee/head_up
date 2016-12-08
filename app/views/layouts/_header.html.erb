@@ -23,6 +23,11 @@
                         <a data-toggle="modal" data-target="#debugModal">Debug</a>
                     </li>
                 <% end %>
+                <% if logged_in? && current_user.admin? %>
+                    <li>
+                        <a class="page-scroll" href="/admin">Admin</a>
+                    </li>
+                <% end %>
                 <li>
                     <a class="page-scroll" <%= current_page?("/") ? "href=#work_with_me" : "href=/#work_with_me" %> >Work With Me</a>
                 </li>

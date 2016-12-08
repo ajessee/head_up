@@ -1,6 +1,9 @@
 <section id="lead_index" class="services bg-coolGrey">
     <div class="container">
     <h1>Leads:</h1>
+    <% if !flash.empty? %>
+      <%= render 'shared/flash_no_section' %>
+    <% end %>
         <div class="text-center">
           <%= will_paginate  %>
         </div>
@@ -19,6 +22,9 @@
               <p class="nexa-light-center white_text">
                   Updated: <%= time_ago_in_words(lead.updated_at) %> ago
               </p>
+              <% if current_user.admin? && !current_user?(lead) %>
+                <%= link_to "Delete", lead, class: "btn btn-danger", method: :delete, data: { confirm: "You sure?" } %>
+              <% end %>
               <hr class="colored">
           </div>
           <% end %>
