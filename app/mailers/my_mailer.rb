@@ -5,6 +5,6 @@ class MyMailer < ApplicationMailer
     @email = options[:email]
     @phone = options[:phone]
     @message = options[:message]
-    mail(:to=>"stephaniejudd@gmail.com", :subject=>"New Lead from headupinc.com!")
+    mail(:to=>"stephanie@wolfandheron.com", :subject=>"New Lead from headupinc.com!")
   end
 end
