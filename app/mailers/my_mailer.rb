@@ -7,4 +7,10 @@ class MyMailer < ApplicationMailer
     @message = options[:message]
     mail(:to=>"stephanie@wolfandheron.com", :subject=>"New Lead from headupinc.com!")
   end
+
+  def account_activation(user)
+    @user = user
+    mail to: user.email, subject: "Activate your Head Up account!"
+  end
+  
 end
