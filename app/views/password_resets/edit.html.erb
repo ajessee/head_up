@@ -1,0 +1,41 @@
+<!-- Password Reset Form Section -->
+<section id="password_reset_edit" class="bg-dark">
+    <div class="container wow fadeIn vert-center">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h4>Reset Password</h4>
+                <hr class="colored">
+                <h5>Please enter and confirm your new password.</h5>
+                <% if !flash.empty? %>
+                    <%= render 'shared/flash' %>
+                <% end %>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <%= form_for(@user, url: password_reset_path(params[:id])) do |f| %>
+                    <%= hidden_field_tag :email, @user.email %>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <%= f.label :password %>
+                            <%= f.password_field :password, class: "form-control", placeholder: "Enter new password" %>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <%= f.label :password_confirmation %>
+                            <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm new password" %>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                             <%= f.submit "Submit", class: "btn btn-outline-dark float-right" %>
+                       </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>

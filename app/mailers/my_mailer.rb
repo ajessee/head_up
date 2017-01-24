@@ -12,5 +12,10 @@ class MyMailer < ApplicationMailer
     @user = user
     mail to: user.email, subject: "Activate your Head Up account!"
   end
+
+  def password_reset(user)
+    @user = user
+    mail to: user.email, subject: "Reset your Head Up account password."
+  end
   
 end
