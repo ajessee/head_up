@@ -1,12 +1,8 @@
-# Head Up, Inc.
+# [Head Up, Inc.](https://headupinc.com/) 
 
-https://headupinc.com/
+A web application I built for Head Up Inc. consulting company. Basic business requirements were to be able to provide information to prospective clients about business services, capture lead information, and communicate through a newsletter to leads and clients.
 
-This is a website that I built for a client who is starting a consulting company. Her basic requirements were a webpage where she could provide information to prospective clients about her business, capture lead information, and have clients sign up for a newsletter. 
-
-In order to make sure that I shipped a product that she was happy with, we worked together using the agile methodology to ensure that she was involved in the design process from beginning to end. We set up a Trello board to track the user stories that we had built out together from her business requirements. She hired a designer to come up with a logo and color scheme, and I used those materials to create a visual design that reflected the vision she had for her business.
-
-The site is written in Rails 5 and currently deployed in production using Amazon Web Services (AWS). 
+The site is written in Rails 5 and currently deployed in production using Amazon Web Services (AWS). The client and I worked together using the agile methodology to ensure that she was involved in the design process from beginning to end. We set up a Trello board to track the user stories that we had built out together from her business requirements. She hired a designer to come up with a logo and color scheme, and I used those materials to create a visual design that reflected the vision she had for her business.
 
 ## Features:
 
