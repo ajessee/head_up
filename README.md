@@ -1,5 +1,5 @@
 ![Head Up](https://s3.amazonaws.com/elasticbeanstalk-us-east-1-682190930028/resources/HUOrange.jpg)
-# [Head Up, Inc.](https://headupinc.com/) 
+# [Head Up, Inc.](https://head-up.herokuapp.com/) 
 
 A web application I built for Head Up Inc. consulting company. Basic business requirements were to be able to provide information to prospective clients about business services, capture lead information, and communicate through a newsletter to leads and clients.
 
